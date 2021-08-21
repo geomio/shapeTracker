@@ -17,3 +17,11 @@ describe('Triangle', () =>{
     expect(notTriangle.checkType()).toEqual("not a triangle");
   })
 });
+
+describe('Triangle', () => {
+  
+  test('should correctly determine wether three lengths make a scalene triangle', () => {
+    const scalTriangle = new Triangle(4, 5, 7)
+    expect(scalTriangle.checkType()).toEqual("scalene triangle");
+  })
+});
